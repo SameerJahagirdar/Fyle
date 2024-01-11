@@ -6,7 +6,7 @@ from core.models.assignments import Assignment
 from core.models.teachers import Teacher
 
 from .schema import AssignmentSchema, AssignmentGradeSchema
-principal_assignments_resources = Blueprint('principle_assignments_resources', __name__)
+principal_assignments_resources = Blueprint('principal_assignments_resources', __name__)
 
 @principal_assignments_resources.route('/assignments',methods=['GET'], strict_slashes=False)
 @decorators.authenticate_principal
